@@ -21,5 +21,5 @@ Consolidation V3 module for *Star Valor*. Overhauls the vanilla **Tier 4 Ancient
 ---
 
 ## 📜 Intellectual Property & Attribution
-* **Authors:** Brio Griondy Dahlinar & Gemini AI Collaborator (2026)
+* **Authors:** Brio Griondy Dahlinar (2026)
 * **License:** Licensed under GNU General Public License v3.0.
