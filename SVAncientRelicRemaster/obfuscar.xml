@@ -1,0 +1,29 @@
+﻿<?xml version='1.0'?>
+<Obfuscator>
+	<!-- JALUR RELATIF PORTABLE (AMAN KANGGO GITHUB) -->
+	<Var name="InPath" value=".\bin\Release" />
+	<Var name="OutPath" value=".\bin\Release\Obfuscated" />
+
+	<!-- 1. PROTOKOL PENGHANCUR STRUKTUR (OPTIMIZED FOR BEPINEX & HARMONY) -->
+	<Var name="KeepPublicApi" value="true" />
+	<Var name="RenameFields" value="true" />
+	<Var name="RenameProperties" value="true" />
+	<Var name="RenameEvents" value="true" />
+
+	<!-- 2. REUSE NAMES: Menggunakan nama pendek berulang -->
+	<Var name="ReuseNames" value="true" />
+
+	<!-- 3. PENJINAKAN METADATA: Matikan Unicode agar lolos dari sensor Mono Cecil BepInEx -->
+	<Var name="UseSpecialNames" value="false" />
+	<Var name="UseUnicodeNames" value="false" />
+
+	<!-- 4. ANTI-ANTI-DECOMPILE -->
+	<Var name="SuppressIldasm" value="true" />
+
+	<!-- 5. PROTEKSI INTI (LOGIKA DAN TEKS TETAP DIKUNCI MATI) -->
+	<Var name="HideStrings" value="true" />
+	<Var name="ControlFlowObfuscation" value="true" />
+
+	<!-- TARGET EKSEKUSI -->
+	<Module file="$(InPath)\SV Ancient Relic Remastered.dll" />
+</Obfuscator>
